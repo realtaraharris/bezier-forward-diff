@@ -1,0 +1,25 @@
+{
+  "name": "bezier-forward-diff",
+  "version": "1.0.0",
+  "description": "Bezier subdivision via forward differencing",
+  "main": "bezier.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxharris9/bezier-forward-diff.git"
+  },
+  "keywords": [
+    "bezier",
+    "forward",
+    "differencing",
+    "subdivision"
+  ],
+  "author": "Max Harris <harris.max@gmail.com> (http://xyzzy.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxharris9/bezier-forward-diff/issues"
+  },
+  "homepage": "https://github.com/maxharris9/bezier-forward-diff"
+}
