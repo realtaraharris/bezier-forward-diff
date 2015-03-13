@@ -3,8 +3,6 @@ var vec3scale = require('gl-vec3/scale');
 var vec3add = require('gl-vec3/add');
 var vec3scaleAndAdd = require('gl-vec3/scaleAndAdd');
 
-// forward-differencing
-// original: http://www.drdobbs.com/forward-difference-calculation-of-bezier/184403417?pgno=5
 function calcBezier (result, input, steps) {
   var a = [0, 0, 0];
   var b = [0, 0, 0];
