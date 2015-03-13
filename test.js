@@ -1,6 +1,7 @@
 var test = require('tape');
 var bezier = require('./bezier');
 var vec3 = require('gl-vec3');
+var zeroes = require('zeroes');
 
 var input = [ [ 0, 0, 0 ],
               [ 0, 0, 1 ],

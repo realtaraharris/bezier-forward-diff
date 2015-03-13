@@ -21,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/maxharris9/bezier-forward-diff/issues"
   },
-  "homepage": "https://github.com/maxharris9/bezier-forward-diff"
+  "homepage": "https://github.com/maxharris9/bezier-forward-diff",
+  "devDependencies": {
+    "tape": "^3.5.0",
+    "zeroes": "^0.1.0"
+  },
+  "dependencies": {
+    "gl-vec3": "^1.0.3"
+  }
 }
