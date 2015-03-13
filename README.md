@@ -10,9 +10,9 @@ Bezier subdivision via forward differencing
     var zeroes = require('zeroes');
 
     var input = [ [ 0, 0, 0 ],
-                   [ 0, 0, 1 ],
-                   [ 0, 1, 1 ],
-                   [ 1, 1, 1 ] ];
+                  [ 0, 0, 1 ],
+                  [ 0, 1, 1 ],
+                  [ 1, 1, 1 ] ];
 
     var segments = 7;
 
