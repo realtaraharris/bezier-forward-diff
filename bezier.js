@@ -40,8 +40,8 @@ function calcBezier (result, input, steps) {
   // compute points at each step
   var point = [input[0][0], input[0][1], input[0][2]];
   result[0][0] = input[0][0];
-  result[0][1] = input[1][0];
-  result[0][2] = input[2][0];
+  result[0][1] = input[0][1];
+  result[0][2] = input[0][2];
 
   for (var i = 1; i < steps; i++) {
     vec3add(point, point, firstFD);

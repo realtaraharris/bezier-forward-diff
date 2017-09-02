@@ -44,7 +44,53 @@ test('simple case with four points, 12 segments', function (t) {
                    [ 0.5787037037037037, 0.9259259259259259, 0.9953703703703706 ],
                    [ 0.7702546296296297, 0.9803240740740741, 0.9994212962962966 ],
                    [ 1, 1, 1 ] ];
-  
+
   t.deepEqual(result, expected);
   t.end();
 });
+
+test('simple case on 2D plane z = 0', function (t) {
+  var input2d = [ [ 0, 0, 0 ],
+                  [ 0, 1, 0 ],
+                  [ 1, 1, 0 ],
+                  [ 1, 0, 0 ] ];
+
+  var result = zeroes( [ 8 + 1, 3 ] ); // n + 1 points define n segments
+  bezier(result, input2d, 8);
+
+  var expected = [ [ 0, 0, 0 ],
+                   [ 0.04296875, 0.328125, 0 ],
+                   [ 0.15625, 0.5625, 0 ],
+                   [ 0.31640625, 0.703125, 0 ],
+                   [ 0.5, 0.75, 0 ],
+                   [ 0.68359375, 0.703125, 0 ],
+                   [ 0.84375, 0.5625, 0 ],
+                   [ 0.95703125, 0.328125, 0 ],
+                   [ 1, 0, 0 ] ];
+
+  t.deepEqual(result, expected);
+  t.end();
+})
+
+test('simple case on 2D plane z = 1', function (t) {
+  var input2d = [ [ 0, 0, 1 ],
+                  [ 0, 1, 1 ],
+                  [ 1, 1, 1 ],
+                  [ 1, 0, 1 ] ];
+
+  var result = zeroes( [ 8 + 1, 3 ] ); // n + 1 points define n segments
+  bezier(result, input2d, 8);
+
+  var expected = [ [ 0, 0, 1 ],
+                   [ 0.04296875, 0.328125, 1 ],
+                   [ 0.15625, 0.5625, 1 ],
+                   [ 0.31640625, 0.703125, 1 ],
+                   [ 0.5, 0.75, 1 ],
+                   [ 0.68359375, 0.703125, 1 ],
+                   [ 0.84375, 0.5625, 1 ],
+                   [ 0.95703125, 0.328125, 1 ],
+                   [ 1, 0, 1 ] ];
+
+  t.deepEqual(result, expected);
+  t.end();
+})
